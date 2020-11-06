@@ -62,7 +62,7 @@ public class PublicPlaylist extends Playlist{
 	public String showInfo(){
 		String info;
 		info = super.showInfo() +
-		"\n** Puntuacion media: " + avScore +
+		"\n** Average score: " + avScore +
 		"\n***********************************";
 		return info;
 	}
