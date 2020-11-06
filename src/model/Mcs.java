@@ -204,7 +204,7 @@ public class Mcs{
 	
 	/**
 	* Rates a public playlist.<br>
-	* <b>pre:</b> parameters are initialized. Song list is initialized. Playlist list is initialized.<br>
+	* <b>pre:</b> Parameters are initialized. Song list is initialized. Playlist list is initialized.<br>
 	* <b>post:</b> The public playlist was rated. <br>
 	* @param plIndex Playlist owners. plIndex > 0. plIndex != null.
 	* @param score Playlist title. score > 0. score != null.
