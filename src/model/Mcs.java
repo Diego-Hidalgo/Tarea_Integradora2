@@ -39,7 +39,7 @@ public class Mcs{
 	* Searches for an user. <br>
 	* <b>pre:</b> User list is initialized. Name is initialized <br>
 	* <b>post:</b> True if the user exists, false if not. <br>
-	* @param user Name of the user to search. user != null.
+	* @param name Name of the user to search. user != null.
 	*/
 	public boolean findUser(String name){
 		boolean find = false;
@@ -188,8 +188,8 @@ public class Mcs{
 	* Adds a song to a playlist.<br>
 	* <b>pre:</b> parameters are initialized. Song list is initialized. Playlist list is initialized.<br>
 	* <b>post:</b> Song sucesfully added to playlist or Song could not be added. <br>
-	* @param owners Playlist owners. owners != "". owners != null.
-	* @param title Playlist title. title != "". title != null.
+	* @param sIndex Playlist owners. sIndex > 0. sIndex != null.
+	* @param plIndex Playlist title. plIndex > 0. plIndex != null.
 	*/
 	public String addSongToPlaylist(int plIndex, int sIndex){
 		String msg = "No se pudo agregar la cancion a la playlist. Se ha alcanzado el maximo permitido.";
@@ -206,6 +206,8 @@ public class Mcs{
 	* Rates a public playlist.<br>
 	* <b>pre:</b> parameters are initialized. Song list is initialized. Playlist list is initialized.<br>
 	* <b>post:</b> The public playlist was rated. <br>
+	* @param plIndex Playlist owners. plIndex > 0. plIndex != null.
+	* @param score Playlist title. score > 0. score != null.
 	*/
 	public void ratePublicPlaylist(int plIndex, double score){
 		int count = 0;

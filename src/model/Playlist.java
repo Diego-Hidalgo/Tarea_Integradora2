@@ -15,7 +15,7 @@ public abstract class Playlist{
 	* Constructor of the Playlist class. <br>
 	* <b>pre:</b> title is initialized. <br>
 	* <b>post:</b> Playlist class object created. <br>
-	* param title Playlist title. title != "". title != null.
+	* @param title Playlist title. title != "". title != null.
 	*/
 	public Playlist(String title){
 		this.title = title;
@@ -150,6 +150,7 @@ public abstract class Playlist{
 	* Updates the genres of the playlist. <br>
 	* <b>pre:</b><br>
 	* <b>post:</b> genres updated. <br>
+	* @param genre. Genre to add. genre != null.
 	*/
 	public void updateGenres(Genre genre){
 		boolean update = false;
