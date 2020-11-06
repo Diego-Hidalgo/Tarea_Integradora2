@@ -277,11 +277,13 @@ public class Mcs{
 	* <b>post:</b> info of the public playlists.<br>
 	*/
 	public String showPublicPlaylists(){
+		int count = 0;
 		String info = "";
 		for(int i = 0; i<playlists.length; i++){
 			if(playlists[i] != null){
 				if(playlists[i] instanceof PublicPlaylist){
-					info += "\n[" + (i+1) + "]" + playlists[i].showInfo();
+					count ++;
+					info += "\n[" + (count) + "]" + playlists[i].showInfo();
 				}
 			}
 		}
