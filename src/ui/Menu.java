@@ -117,8 +117,8 @@ public class Menu{
 		System.out.println("\n***ACCION: Registrar usuario");
 		System.out.print("Nombre/apodo: ");
 		String name = sc.nextLine();
-		while(app.findBlanks(name)){
-			System.out.println("El nombre de usuario no puede tener espacios en blanco");
+		while(app.findBlanks(name) || name.isEmpty()){
+			System.out.println("El nombre de usuario no puede tener espacios en blanco ni estar vacio");
 			System.out.print("Nombre/Apodo: ");
 			name = sc.nextLine();
 		}
@@ -129,6 +129,11 @@ public class Menu{
 		}
 		System.out.print("Contrasenia: ");
 		String passWord = sc.nextLine();
+		while(passWord.isEmpty()){
+			System.out.println("La contrasenia no puede estar vacia");
+			System.out.print("Contrasenia: ");
+			passWord = sc.nextLine();
+		}
 		System.out.print("Edad: ");
 		int age = sc.nextInt();
 		sc.nextLine();
